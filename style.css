@@ -1,0 +1,294 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a{
+    font-family: 'Work Sans', sans-serif;
+
+}
+img{
+    max-width: 100%;
+}
+
+/* --------- header section ------------- */
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1030;
+}
+.main-header button.btn.btn-outline-primary {
+    padding: 5px 25px;
+    font-weight: 600;
+}
+.main-header button.btn.btn-outline-primary:hover {
+    box-shadow: 1px 1px 15px 0 #6278df;
+}
+.main-header img {
+    width: 40px;
+}
+/* ---------- banner section --------------- */
+.banner-section{
+    background: url(./img/mbr-10.jpg) no-repeat center center ;
+    padding: 170px 0;
+    position: relative;
+    z-index: 1;
+}
+.banner-section::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.banner-section input {
+    padding: 10px 17px;
+}
+.banner-section input:focus{
+    box-shadow: 1px 1px 15px 0 rgba(98, 121, 223, 0.8);
+}
+.banner-section button{
+    background: #59a232;
+    font-weight: 600;
+    border: none;
+    padding: 10px 17px;
+    transition: .4s;
+}
+.banner-section button:hover{
+    background: #fff;
+    color: #6278df;
+    box-shadow: 1px 1px 15px 0 #6278df;
+}
+.banner-section p.h5 {
+    font-size: 23px;
+    font-weight: 300;
+}
+.banner-section p.h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.counter-content h1 {
+    font-weight: 500;
+    font-size: 55px;
+}
+
+/* ------------ About section ------------- */
+.about-text{
+    margin-top: 80px;
+}
+.about-section{
+    background: #f7f9ff;
+}
+.about-text p {
+    font-size: 18px;
+    color: #000 !important;
+    line-height: 37px;
+}
+/* ------------ feature section ------------ */
+.feature-section h2{
+    font-weight: 400;
+}
+.feature-section p{
+    font-weight: 300;
+    font-size: 20px;
+}
+.feature-content {
+    box-shadow: 1px 1px 15px 0 #a9b7c8;
+    border-radius: 3px;
+}
+.feature-img{
+    height: 100%;
+}
+.feature-img img {
+    width: 300px;
+    height: 100%;
+}
+.feature-content .card-body h5 {
+    font-size: 19px;
+    font-weight: 500;
+}
+.feature-content .card-body p {
+    font-size: 14px;
+    line-height: 21px;
+}
+.feature-content .card-body {
+    flex: 1 1 auto;
+    padding: 2.2rem 1rem;
+}
+/* -------------- protfolio section ------- */
+.protfolio-img{
+    position: relative;
+    
+}
+.protfolio-img::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(98, 121, 223, 0.6);
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+
+}
+.protfolio-img:hover::before{
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+}
+/* ------------ pricing section --------- */
+.main-bg{
+    background: #f7f9ff;
+}
+.pricing-table{
+    padding: 50px;
+    background: #fff;
+    box-shadow: 1px 1px 15px 0 #a9b7c8;
+}
+.pricing-table ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.pricing-table ul li {
+    line-height: 50px;
+    font-size: 19px;
+    color: #777;
+    font-weight: 300;
+}
+.pricing-table ul li span {
+    color: #6278df;
+    width: 30px;
+    display: inline-block;
+    font-size: 22px;
+    margin-right: 8px;
+}
+.pricing-btn .btn.btn-outline-primary {
+    padding: 10px 20px;
+    font-size: 19px;
+    font-weight: 500;
+    transition: .4s;
+    margin-top: 20px;
+}
+.pricing-table:hover .pricing-btn .btn.btn-outline-primary{
+    background: #6278df;
+    color: #fff;
+}
+
+.pricing-table:hover .pricing-btn .btn.btn-outline-primary:hover{
+    background: #000;
+    box-shadow: 1px 1px 15px transparent;
+}
+/* ----------- testimonial section ------------ */
+.test-img{
+    width: 40%;
+}
+.test-img img {
+    width: 69px;
+}
+.testimonial-content{
+    width: 220px;
+    margin: auto;
+}
+section.testimonial-section span {
+    font-size: 68px;
+    opacity: 0.5;
+    color: #ccc;
+}
+.test-text {
+    margin-left: -13px;
+    display: inline-block;
+    position: relative;
+    top: 14px;
+}
+.test-text h5 {
+    line-height: 11px;
+}
+.clind-section{}
+.clind-section .card img {
+    width: 120px;
+    margin-top: -44px;
+    margin-left: 11px;
+    margin-bottom: 19px;
+    box-shadow: 1px 1px 15px 0 rgb(98 120 223 / 61%);
+}
+.card-btn a:hover{
+    background: #444;
+    color: #fff;
+    transition: .4s;
+}
+section.clind-section p.card-text {
+    font-size: 13px;
+    word-spacing: 2px;
+    line-height: 21px;
+}
+/* ---------------- form section ---------- */
+.contact-form {
+    padding: 35px !important;
+}
+.contact-form input {
+    padding: 13px 20px;
+}
+.contact-form textarea {
+    padding: 13px 20px;
+    height: 150px;
+}
+.form-btn button.btn.btn-primary {
+    padding: 11px 44px;
+}
+.form-btn button.btn.btn-primary:hover{
+    background: #fff;
+    border: 1px solid #6278df;
+    color: #6278df;
+    box-shadow: 1px 1px 15px 0 rgba(98, 121, 223, 0.767);
+    transition: .4s;
+}
+.contact-form .form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #6278df;
+    outline: 0;
+    box-shadow: 1px 1px 15px 0 rgba(98, 121, 223, 0.767);
+}
+/* ------------------ Footer top secton -------- */
+.footer-top-btn button.btn.btn-outline-success {
+    padding: 12px 23px;
+    border: 1px solid #5ba533;
+    color: #5ba533;
+    font-weight: 600;
+    margin-right: 5px;
+}
+.footer-top-btn button.btn.btn-outline-success:hover{
+    background: #5ba533;
+    color: #fff;
+    box-shadow: 1px 1px 15px 0 rgba(0, 0, 0, 0.3);
+    transition: .4s;
+}
+.footer-top-btn button.btn.btn-success{
+    background: #5ba533;
+    color: #fff;
+    box-shadow: 1px 1px 15px 0 rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    margin-left: 5px;
+    padding: 12px 23px;
+    border: 0;
+}
+.footer-top-btn button.btn.btn-success:hover{
+    background: #000;
+    color: #fff;
+    transition: .4s;
+    box-shadow: none;
+}
